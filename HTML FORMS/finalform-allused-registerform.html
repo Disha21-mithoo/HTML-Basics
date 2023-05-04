@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register-Form</title>
+        <style>
+            body {
+                background-color: #f2f6ff;
+                margin: 0;
+                padding: 16px;
+            }
+            form {
+                text-align: center;
+                background-color: white;
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #ccc;
+            }
+            .Social-Icons{
+                Width: 50px;
+                Height: 50px;
+                padding-top : 16px;
+                padding-bottom: 16px;
+                Padding-left: 32px;
+                padding-right: 32px;
+            }
+            #form-heading{
+                font-size: 32px;
+                padding-top: 56px;
+                padding-bottom: 32px;
+            }
+            .social-wrapper {
+                background-color: #f2f6ff;
+                padding: 24px;
+            }
+            #input-wrapper {
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            .input-box {
+                font-size: 18px;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            #btn-submit {
+                background-color: #0056ff;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                padding-right: 24px;
+                font-size: 18px;
+                color: white;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1 id="form-heading">Register</h1>
+            <div class="social-wrapper">
+                <img class="Social-Icons" src="http://pluspng.com/img-png/google-logo-png-open-2000.png">
+                <img class="Social-Icons" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png">
+                <img class="Social-Icons" src="data:image/png;base64,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">
+                <img class="Social-Icons" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png">
+            </div> 
+            <div id="input-wrapper">
+                <div>
+                    <input class="input-box" name="username" type="text" placeholder="Username">
+                </div>
+                <div>
+                    <input class="input-box" name="email" type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input class="input-box" name="password" type="password" placeholder="Password">
+                </div>
+                <div>
+                    <input class="input-box" name="confirm-password" type="password" placeholder="Confirm Password">
+                </div>
+                <input id="btn-submit" type="submit" value="Register">
+            </div>
+        </form>
+    </body>
+</html>
